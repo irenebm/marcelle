@@ -12,7 +12,9 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@marcellejs/core": "^0.6.1"
+    "@marcellejs/core": "^0.6.1",
+    "node": "^21.0.0",
+    "v18": "^1.0.2"
   },
   "devDependencies": {
     "@marcellejs/design-system": "^0.6.1",

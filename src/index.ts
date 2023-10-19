@@ -1,13 +1,13 @@
 import '@marcellejs/core/dist/marcelle.css';
-import { dashboard, text } from '@marcellejs/core';
+import * as marcelle from '@marcellejs/core';
 
-const x = text('Welcome to Marcelle!');
+const input = marcelle.sketchPad();
 
-const dash = dashboard({
-  title: 'My Marcelle App!',
-  author: 'Marcelle Doe',
-});
+const myDashboard = marcelle.dashboard({
+    title: 'My First Tutorial',
+    author: 'Myself',
+  });
 
-dash.page('Welcome').use(x);
+myDashboard.page('Data Management').sidebar(input);
 
-dash.show();
+myDashboard.show();
